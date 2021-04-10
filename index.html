@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!-- /Font Awesome -->
 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- /Google fonts -->
+
     <link rel="stylesheet" href="./assets/css/12bool.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -19,14 +24,92 @@
     <header id="site_header">
 
         <!-- Menu -->
-        <nav class="menu">
-        
+        <nav class="menu py-10">
+            <div class="container">
+                <div class="row d_flex">
+
+                    <!-- Logo -->
+                    <div class="logo col-lg-2 col-md-2 col-xs-2">
+                        <a href="#">
+                            <img src="./assets/img/logo.png" alt="logo DigitalOcean">
+                        </a>
+                    </div>
+                    <!-- /Logo -->
+
+                    <!-- Mobile menu -->
+                    <div class="mobile_menu text-dx col-md-offset-9 col-md-1 col-xs-offset-9 col-xs-1">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <!-- /Mobile menu -->
+
+                    <!-- Menu central -->
+                    <div class="menu_ctr text-ctr col-lg-6">
+                        <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+                        <a href="#">Customers</a>
+                        <a href="#">Community <i class="fas fa-chevron-down"></i></a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <!-- /Menu central -->
+
+                    <!-- Menu right -->
+                    <div class="menu_dx text-dx col-lg-4">
+                        <a href="#">Docs</a>
+                        <a href="#">Support <i class="fas fa-chevron-down"></i></a>
+                        <a href="#">Login</a>
+                        <a href="#" class="btn btn_outline">Sign Up</a>
+                    </div>
+                    <!-- /Menu right -->
+
+                </div>
+            </div>
         </nav>
         <!-- /Menu -->
 
         <!-- Jumbotron -->
         <div class="jumbotron">
+            <div class="container">
+                <div class="row">
 
+                    <!-- Title and text -->
+                    <div class="jumbotron_text col-lg-7 col-md-7 col-xs-12">
+                        <h1>The simplest cloud platform for developers &amp; teams</h1>
+                        <p>
+                            Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.
+                        </p>
+                    </div>
+                    <!-- Title and text -->
+
+                    <!-- Form -->
+                    <div class="jumbotron_form col-lg-5 col-md-5 col-xs-12">
+                        <div class="form_box text-ctr">
+                            <div class="form_title">
+                                <div>
+                                    Deploy your app in seconds. 
+                                </div>
+                                <div>
+                                    Get started now.
+                                </div>
+                            </div>
+                            <form action="#" method="GET">
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                                <input type="password" name="psw" id="psw" placeholder="Password" required>
+                                <input class="submit" type="submit" value="Create your account">
+                            </form>
+                            <a href="#" class="no_decoration">
+                                <div class="btn_google">
+                                    <img src="./assets/img/google-icon.png" alt="logo google" class="img_google">
+                                    <span class="btn_text">Sign up with google</span>
+                                </div>
+                            </a>
+                            <p>
+                                By signing up you agree to the <a href="#">Terms of Service</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /Form -->
+
+                </div>
+            </div>
         </div>
         <!-- /Jumbotron -->
 

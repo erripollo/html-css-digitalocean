@@ -38,6 +38,10 @@
     text-align: center;
 }
 
+.text-dx{
+    text-align: right;
+}
+
 .my-20{
     margin: 20px 0;
 }
@@ -52,6 +56,10 @@
 
 .mb-20{
     margin-bottom: 20px;
+}
+
+.py-10{
+    padding: 10px 0;
 }
 
 /* 12 columns */
