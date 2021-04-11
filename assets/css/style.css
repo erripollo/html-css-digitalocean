@@ -263,6 +263,11 @@ form .submit{
     color: #006AFF;
 }
 
+/* Features */
+.features .feature_box>a{
+    color: #006AFF;
+}
+
 
 
 
@@ -354,13 +359,13 @@ form .submit{
         line-height: 34px;
     }
 
-    .list_left>ul li>a{
-       font-size: 23px;
+    .p_xs{
+        font-size: 1.1rem;
+        line-height: 24px;
     }
 
-    .p_xs{
-        font-size: 1rem;
-        line-height: 24px;
+    .list_left>ul li>a{
+       font-size: 23px;
     }
 
     .container.box_services{
@@ -391,6 +396,11 @@ form .submit{
     .slide_text{
         font-size: 1.1rem;
         margin-bottom: 80px;
+    }
+
+    /* Features */
+    .feature_box.pl-15{
+        padding-left: 5px;        
     }
 
 
@@ -475,6 +485,15 @@ form .submit{
         width: 80%;
         margin: 0 auto 80px;
         font-size: 1.2rem;
+    }
+
+    /* Features */
+    .feature_box{
+        margin-bottom: 30px;
+    }
+
+    .feature_box.pl-15{
+        padding-left: 0;        
     }
 
 

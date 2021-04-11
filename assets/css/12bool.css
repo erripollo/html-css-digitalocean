@@ -50,6 +50,10 @@
     margin: 20px 0;
 }
 
+.mt-50{
+    margin-top: 50px;
+}
+
 .mt-60{
     margin-top: 60px;
 }
@@ -84,6 +88,10 @@
 
 .pb-50{
     padding-bottom: 50px;
+}
+
+.pr-20{
+    padding-right: 20px;
 }
 
 .pl-15{
