@@ -1,0 +1,834 @@
+/* Common css */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+p{
+    color: #5C6A88;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h2{
+    color: #031C4E;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h4{
+    color: #031C4E;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+h6{
+    font-size: 0.8rem;
+    color: #031C4E;
+    font-weight: 500;
+}
+
+
+/* Utility css */
+.d_flex{
+    display: flex;
+}
+
+.flex_col{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.pos_a{
+    position: absolute;
+}
+
+.pos_r{
+    position: relative;
+}
+
+.text_sx{
+    text-align: left;
+}
+
+.text_grey{
+    color: #5C6A88;
+}
+
+.btn{
+    padding: 5px 10px;
+}
+
+.btn_xl{
+    padding: 10px 20px;
+}
+
+.btn_solid{
+    color: #006AFF;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.btn_solid:hover{
+    opacity: 0.8;
+}
+
+.btn_outline{
+    border: 1px solid #006AFF;
+    color: #006AFF;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+.btn_outline:hover{
+    color: white;
+    background-color: #006AFF;
+}
+
+.no_decoration{
+    text-decoration: none;
+}
+
+.style_none{
+    list-style: none;
+}
+
+.bg_grey{
+    background-color: #F3F5F9;
+}
+
+.bg_blue_grad{
+    background: linear-gradient(180deg, #0048C5 0%, #001E9A 100%);
+}
+
+.bg_blue{
+    background-color: #031C4E;
+}
+
+.p_xs{
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+
+/********************************
+* Site Header css 
+********************************/
+
+/* Menu */
+#site_header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav{
+    font-size: 15px;
+}
+
+nav .row{
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #031C4E;
+    transition: all 0.2s;
+}
+nav a:hover{
+    color: #006AFF;
+}
+
+.menu_ctr a:first-child:hover ~ .products_menu{
+   visibility: visible;
+}
+
+.menu_ctr a:nth-child(4):hover ~ .community_menu{
+    visibility: visible;
+ }
+
+.menu_ctr a, .menu_dx a{
+    margin-left: 20px;
+}
+
+nav i{
+    font-size: 0.7rem;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+/* Dropdown menu */
+.products_menu,
+.community_menu{
+    background-color: white;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.products_menu:hover,
+.community_menu:hover{
+    visibility: visible;
+}
+
+.products_menu .col_left>h6, 
+.community_menu .col_left>h6{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.products_menu .d_flex,
+.community_menu .d_flex{
+    align-items: center;
+}
+
+
+.products_menu a img,
+.community_menu a img{
+    width: 45px;
+    margin-right: 20px;
+}
+
+.product{
+    width: calc(100%/3);
+}
+
+.product img{
+    width: 25px;
+}
+
+.product .d_flex{
+    align-items: center;
+}
+
+.d_flex.wrap{
+    align-items: baseline;
+    border-left: 1px solid lightgrey;
+    padding-left: 20px;
+}
+
+.product h6{
+    margin-left: 20px;
+}
+
+.product>ul>li>a,
+.community_menu .col_ctr>ul>li>a{
+    color: #5C6A88;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.product>ul>li>a:hover,
+.community_menu .col_ctr>ul>li>a:hover,
+.col_right .article>a:hover .text_grey{
+    color: #006AFF;
+}
+
+.community_menu .col_ctr,
+.community_menu .col_right{
+    border-left: 1px solid lightgrey;
+    padding-left: 20px;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(../img/bg-banner-home.jpg);
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.jumbotron_text{
+    color: white;
+    padding-top: 10px;
+    padding-right: 80px;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.jumbotron_text p{
+    color: white;
+    opacity: 0.7;
+}
+
+.jumbotron_form{
+    padding-left: 40px;
+}
+
+.form_box{
+    color: #031C4E;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.form_title div:last-child{
+    color: #006AFF;
+}
+
+form input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 5px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+}
+
+form .submit{
+    color: white;
+    background-color: #579AFF;
+    padding: 8px 0;
+}
+
+.form_box a{
+    color: #626262;
+    
+}
+
+.btn_google img{
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    filter: opacity(0.7);
+}
+.btn_google{
+    margin: 5px 0;
+    position: relative;
+    font-size: 13px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form_box p{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.form_box p>a{
+    color: #006AFF;
+}
+
+/********************************
+* Site Main css 
+********************************/
+
+/* Customers */
+.customers{
+    padding: 50px 0 30px;
+}
+
+.customers .container{
+    padding: 0;
+}
+
+.customers .container>p{
+    color: #6F7B97;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.customers_logos>img{
+    width: 150px;
+    vertical-align: middle;
+    margin: 20px 5px 10px;   
+}
+
+.customers .container>a{
+    color: #006AFF;
+    
+}
+
+/* Services */
+.services{
+    padding: 80px 0 50px;
+}
+
+.services_title{
+    margin-bottom: 60px;
+}
+
+.services_title>p{
+    margin-top: 10px;
+}
+
+.list_left{
+    border-left: 2px solid #CCCCCC;
+    padding: 10px 10px;
+}
+
+.list_left>ul{
+    list-style: none;
+}
+
+.list_left>ul li>a{
+    text-decoration: none;
+    color: #75809A;
+    transition: all 0.3s;
+}
+
+.list_left>ul li>a:hover{
+    color: #031C4E;
+    font-size: 1.2rem;
+}
+
+/* Slides*/
+.slides .slide a>img{
+    width: 550px;
+    padding-bottom: 30px;
+}
+
+.slides .slide{
+    justify-content: center;
+    align-items: center;
+}
+
+.slides .slide a>i{
+    font-size: 2.5rem;
+    margin: 0 20px;
+    color: #6F7B97;
+}
+
+.slides .slide a:last-child>i, .slide_text{
+    color: #031C4E;
+}
+
+.circles a>i{
+    font-size: 0.8rem;
+    color: #006AFF;
+}
+
+/* Features */
+.features .feature_box>a{
+    color: #006AFF;
+}
+
+/* Services Region */
+.regions{
+    color: white;
+}
+
+.regions h2{
+    color: white;
+}
+
+.region_box{
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+}
+
+.regions_col>.region_box:last-child{
+    border-bottom: none;
+}
+
+.region_initial{
+    text-transform: uppercase;
+    width: 75px;
+}
+
+.region{
+    flex-grow: 2;
+    opacity: 0.6;
+}
+
+.test>a{
+    color: #00D5D1;
+}
+
+/* Slides 2 */
+.card{
+    width: 550px;
+    background-color: white;
+    padding: 60px 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.card>img{
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.card_text{
+    margin-bottom: 15px;
+}
+
+.founder{
+    font-size: 1rem;
+    color: #031C4E;
+    margin-bottom: 30px;
+}
+
+.card>a{
+    color: #006AFF;
+}
+
+/* Get started */
+.get_started>h2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.get_started>a{
+    display: inline-block;
+}
+
+/********************************
+* Site Footer css 
+********************************/
+.footer_left, .footer_main, .footer_main a{
+    font-size: 0.9rem;
+    color: #8B94A9;
+}
+.footer_left div:nth-child(3){
+    opacity: 0.5;
+}
+
+.footer_main a{
+    transition: all 0.2s;
+}
+.footer_main a:hover{
+    color: white;
+}
+
+.footer_left img{
+    width: 40px;
+    filter: opacity(0.7);
+}
+
+.footer_left>a>i{
+    font-size: 1.1rem;
+    color: #7A859D;
+    margin-right: 8px;
+    transition: all 0.2s;
+}
+.footer_left>a>i:hover{
+    color: white;  
+}
+
+.footer_main>.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+/********************************
+* Media Query 
+********************************/
+
+/************* TABLET **************/
+@media screen and (max-width: 991px){
+    /* Commons */
+    h1{
+        font-size: 2.4rem;
+    }
+
+    h2{
+        font-size: 2.4rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    .p_xs{
+        font-size: 1.1rem;
+        line-height: 24px;
+    }
+
+
+    /*****************
+    * Site Header
+    *****************/
+
+    /* Mobile menu */
+    .mobile_menu{
+        display: block;
+    }
+
+    .mobile_menu i{
+        color: #006AFF;
+        font-size: 1rem;
+    }
+
+    .menu_ctr, .menu_dx{
+        display: none;
+    }
+
+    /* Jumbotrom */
+    .jumbotron{
+        background-position-x: 50%;
+    }
+
+    .jumbotron_text{
+        padding-right: 20px;
+    }
+
+    .jumbotron_form{
+        padding-left: 10px;
+    }
+    
+    .jumbotron_text p{
+        margin-top: 20px;
+    }
+
+    .form_title{
+        font-size: 30px;
+    }
+
+    /*****************
+    * Site Main
+    *****************/
+
+    /* Customers */
+    .customers .container>p{
+        font-size: 18px;
+    }
+
+    .customers_logos>img{
+        width: 110px;   
+    }
+
+    /* Services */
+    .list_left>ul li>a{
+       font-size: 23px;
+    }
+
+    .container.box_services{
+        padding: 0;
+    }
+
+    .box_service{
+        padding-right: 25px;
+    }
+
+    .box_service.pl-15{
+        padding-left: 10px;
+    }
+
+    /* Slides */
+    .slide{
+        margin-top: 100px;
+    }
+
+    .slides .slide a>img{
+        width: 400px;
+    }
+
+    .slides .slide a>i{
+        font-size: 3.5rem;
+    }
+
+    .slide_text{
+        font-size: 1.1rem;
+        margin-bottom: 80px;
+    }
+
+    /* Features */
+    .feature_box.pl-15{
+        padding-left: 5px;        
+    }
+
+    /* Services Region */
+    .regions_col{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Slides 2 */
+    .card{
+        width: 400px;
+    }
+
+    .card>img{
+        width: 320px;
+        margin-bottom: 30px;
+    }
+
+    /* Get started */
+    .get_started>a{
+        font-size: 1.3rem;
+    }
+
+    .btn_xl{
+        padding: 15px 20px;
+    }
+
+    /*****************
+    * Site Footer
+    *****************/
+    .footer_left, .footer_main, .footer_main a{
+        font-size: 1rem;
+    }
+
+    .footer_left img{
+        width: 50px;
+    }
+
+    .footer_left>a>i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    .footer_main [class*=col]{
+        margin-top: 20px;
+    }
+
+}
+
+
+/************* SMARTPHONE **************/
+@media screen and (max-width: 767px){
+
+    /*****************
+    * Site Header
+    *****************/
+
+    /* Jumbotron */
+
+    .jumbotron_text{
+        padding-right: 0px;
+    }
+
+    .jumbotron_form{
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+
+    /*****************
+    * Site Main
+    *****************/
+
+    /* Customers */
+    .customers{
+        padding: 30px 0 15px;
+    }
+
+    .customers .container{
+        padding: 10px;
+    }
+
+    .customers .container>p{
+        font-size: 18px;
+    }
+    
+    .customers_logos>img{
+        width: 200px;
+        margin: 10px 15px;  
+    }
+
+    /* Services */
+
+    h2{
+        font-size: 2.2rem;
+    }
+
+    .list_left{
+        margin-bottom: 30px;
+    }
+
+    .box_service{
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .box_service.pl-15{
+        padding-left: 0;
+    }
+
+    .box_services .row.mb-30{
+        margin-bottom: 0;
+    }
+
+    /* Slides */
+
+    .slides .slide a>img{
+        width: 350px;
+    }
+
+    .slides .slide a>i{
+        display: none;
+    }
+
+    .slide_text{
+        width: 80%;
+        margin: 0 auto 80px;
+        font-size: 1.2rem;
+    }
+
+    /* Features */
+    .feature_box{
+        margin-bottom: 30px;
+    }
+
+    .feature_box.pl-15{
+        padding-left: 0;        
+    }
+
+    /* Services Region */
+    .region_initial{
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 489px){
+
+    /* Customers */   
+    .customers_logos>img{
+        width: 100px;
+        margin: 10px 15px;  
+    }
+
+    /* Slides */
+    .slides .slide a>img{
+        width: 300px;
+    }
+
+    /* Slides 2 */
+    .card>img{
+        width: 250px;
+        margin-bottom: 30px;
+    }
+
+}
