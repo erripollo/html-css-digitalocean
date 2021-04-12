@@ -41,6 +41,16 @@ h4{
     padding: 5px 10px;
 }
 
+.btn_xl{
+    padding: 10px 20px;
+}
+
+.btn_solid{
+    color: #006AFF;
+    background-color: white;
+    border-radius: 5px;
+}
+
 .btn_outline{
     border: 1px solid #006AFF;
     color: #006AFF;
@@ -53,6 +63,10 @@ h4{
 
 .bg_grey{
     background-color: #F3F5F9;
+}
+
+.bg_blue_grad{
+    background: linear-gradient(180deg, #0048C5 0%, #001E9A 100%);
 }
 
 .p_xs{
@@ -271,7 +285,6 @@ form .submit{
 /* Services Region */
 .regions{
     color: white;
-    background: linear-gradient(180deg, #0048C5 0%, #001E9A 100%);
 }
 
 .regions h2{
@@ -328,6 +341,16 @@ form .submit{
 
 .card>a{
     color: #006AFF;
+}
+
+/* Get started */
+.get_started>h2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.get_started>a{
+    display: inline-block;
 }
 
 
@@ -481,6 +504,15 @@ form .submit{
     .card>img{
         width: 320px;
         margin-bottom: 30px;
+    }
+
+    /* Get started */
+    .get_started>a{
+        font-size: 1.3rem;
+    }
+
+    .btn_xl{
+        padding: 15px 20px;
     }
 
 }
