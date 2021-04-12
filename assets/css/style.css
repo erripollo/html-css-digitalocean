@@ -268,6 +268,70 @@ form .submit{
     color: #006AFF;
 }
 
+/* Services Region */
+.regions{
+    color: white;
+    background: linear-gradient(180deg, #0048C5 0%, #001E9A 100%);
+}
+
+.regions h2{
+    color: white;
+}
+
+.region_box{
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+}
+
+.regions_col>.region_box:last-child{
+    border-bottom: none;
+}
+
+.region_initial{
+    text-transform: uppercase;
+    width: 75px;
+}
+
+.region{
+    flex-grow: 2;
+    opacity: 0.6;
+}
+
+.test>a{
+    color: #00D5D1;
+}
+
+/* Slides 2 */
+.card{
+    width: 550px;
+    background-color: white;
+    padding: 60px 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.card>img{
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.card_text{
+    margin-bottom: 15px;
+}
+
+.founder{
+    font-size: 1rem;
+    color: #031C4E;
+    margin-bottom: 30px;
+}
+
+.card>a{
+    color: #006AFF;
+}
+
+
+
 
 
 
@@ -403,7 +467,21 @@ form .submit{
         padding-left: 5px;        
     }
 
+    /* Services Region */
+    .regions_col{
+        padding: 0;
+        margin-bottom: 20px;
+    }
 
+    /* Slides 2 */
+    .card{
+        width: 400px;
+    }
+
+    .card>img{
+        width: 320px;
+        margin-bottom: 30px;
+    }
 
 }
 
@@ -494,6 +572,11 @@ form .submit{
 
     .feature_box.pl-15{
         padding-left: 0;        
+    }
+
+    /* Services Region */
+    .region_initial{
+        width: 60px;
     }
 
 
