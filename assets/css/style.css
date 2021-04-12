@@ -27,6 +27,12 @@ h4{
     font-weight: 500;
 }
 
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
 
 /* Utility css */
 .d_flex{
@@ -61,12 +67,20 @@ h4{
     text-decoration: none;
 }
 
+.style_none{
+    list-style: none;
+}
+
 .bg_grey{
     background-color: #F3F5F9;
 }
 
 .bg_blue_grad{
     background: linear-gradient(180deg, #0048C5 0%, #001E9A 100%);
+}
+
+.bg_blue{
+    background-color: #031C4E;
 }
 
 .p_xs{
@@ -353,14 +367,34 @@ form .submit{
     display: inline-block;
 }
 
-
-
-
-
-
 /********************************
 * Site Footer css 
 ********************************/
+.footer_left, .footer_main, .footer_main a{
+    font-size: 0.9rem;
+    color: #8B94A9;
+}
+.footer_left div:nth-child(3){
+    opacity: 0.5;
+}
+
+.footer_left img{
+    width: 40px;
+    filter: opacity(0.7);
+}
+
+.footer_left>a>i{
+    font-size: 1.1rem;
+    color: #7A859D;
+    margin-right: 8px;
+}
+
+.footer_main>.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 
 
 
@@ -376,6 +410,34 @@ form .submit{
 
 /************* TABLET **************/
 @media screen and (max-width: 991px){
+    /* Commons */
+    h1{
+        font-size: 2.4rem;
+    }
+
+    h2{
+        font-size: 2.4rem;
+    }
+
+    h4{
+        font-size: 1.2rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    .p_xs{
+        font-size: 1.1rem;
+        line-height: 24px;
+    }
+
+
     /*****************
     * Site Header
     *****************/
@@ -406,10 +468,6 @@ form .submit{
     .jumbotron_form{
         padding-left: 10px;
     }
-
-    h1{
-        font-size: 2.4rem;
-    }
     
     .jumbotron_text p{
         margin-top: 20px;
@@ -433,24 +491,6 @@ form .submit{
     }
 
     /* Services */
-    h2{
-        font-size: 2.4rem;
-    }
-
-    h4{
-        font-size: 1.2rem;
-    }
-
-    p{
-        font-size: 23px;
-        line-height: 34px;
-    }
-
-    .p_xs{
-        font-size: 1.1rem;
-        line-height: 24px;
-    }
-
     .list_left>ul li>a{
        font-size: 23px;
     }
@@ -513,6 +553,26 @@ form .submit{
 
     .btn_xl{
         padding: 15px 20px;
+    }
+
+    /*****************
+    * Site Footer
+    *****************/
+    .footer_left, .footer_main, .footer_main a{
+        font-size: 1rem;
+    }
+
+    .footer_left img{
+        width: 50px;
+    }
+
+    .footer_left>a>i{
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    .footer_main [class*=col]{
+        margin-top: 20px;
     }
 
 }

@@ -50,6 +50,10 @@
     margin: 20px 0;
 }
 
+.mt-10{
+    margin-top: 10px;
+}
+
 .mt-50{
     margin-top: 50px;
 }
@@ -78,8 +82,16 @@
     margin-bottom: 30px;
 }
 
+.mr-5{
+    margin-right: 5px;
+}
+
 .py-10{
     padding: 10px 0;
+}
+
+.pt-50{
+    padding-top: 50px;
 }
 
 .pt-80{
