@@ -396,14 +396,6 @@ form .submit{
 
 
 
-
-
-
-
-
-
-
-
 /********************************
 * Media Query 
 ********************************/
@@ -641,7 +633,7 @@ form .submit{
         margin-bottom: 0;
     }
 
-    /* Slides*/
+    /* Slides */
 
     .slides .slide a>img{
         width: 350px;
@@ -670,7 +662,25 @@ form .submit{
     .region_initial{
         width: 60px;
     }
+}
 
+@media screen and (max-width: 489px){
 
+    /* Customers */   
+    .customers_logos>img{
+        width: 100px;
+        margin: 10px 15px;  
+    }
+
+    /* Slides */
+    .slides .slide a>img{
+        width: 300px;
+    }
+
+    /* Slides 2 */
+    .card>img{
+        width: 250px;
+        margin-bottom: 30px;
+    }
 
 }
